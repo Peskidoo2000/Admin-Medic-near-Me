@@ -4,23 +4,40 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.body, .html{
+  overflow-x:"hidden";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-primary: oklch(72.3% 0.219 149.579);
+  --color-primary-light: oklch(78% 0.08 151.328);
+  --color-primary-dark: oklch(44.8% 0.119 151.328);
+  --color-success:oklch(62.3% 0.214 259.815);
+  --color-error: oklch(57.7% 0.245 27.325);
+  --color-warning: oklch(79.5% 0.184 86.047);
+  --color-suplementary: oklch(97% 0.001 106.424);
+
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-semibold: 600;
+
+ --font-roboto: "Roboto", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --breakpoint-sm:480px;
+  --breakpoint-md:768px;
+  --breakpoint-lg:1024px;
+  --breakpoint-xl:1280px;
+  --breakpoint-2xl:1536px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
