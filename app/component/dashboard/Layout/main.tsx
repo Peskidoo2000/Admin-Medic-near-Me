@@ -6,7 +6,7 @@ import { UseSidebar } from "../context/sidebarContext";
 import {facilitiesData, PieChartComponent} from "../dashboardComponent/charts/piechart";
 import {Columns} from "../table/TableComponent"
 import { mockFacilities } from "../../mockdatas/Mockdatas";
-import DividerLine from "../../shared/Dividerline";
+
 
 const Main =()=>{
     /** isClicked from sideBar context for visibility */
